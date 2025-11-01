@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
+   <!-- Style -->
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+  <!-- HEADER -->
+     <header>
+  <nav id="main-nav" aria-label="Main navigation">
+    <div class="container">
+      <img src="img/logo1.png" alt="Coffeeroasters logo" class="logorasm">
+
+      <ul class="nav__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="create.html">Create your plan</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu toggle" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+ <!-- main -->
+    <main>
+        <!-- create section -->
+         <section class="create">
+<div class="container">
+    <h1>Create a plan</h1>
+    <p>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.</p>
+</div>
+         </section>
+         <!-- Pickyourcoffee section -->
+          <section class="Pickyourcoffee">
+    <div class="container">
+      <div class="steps">
+        <div class="progress-line"></div>
+        <div class="step">
+          <div class="circle"></div>
+          <div class="step-number">01</div>
+          <h3>Pick your coffee</h3>
+          <p>Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+        </div>
+        <div class="step">
+          <div class="circle"></div>
+          <div class="step-number">02</div>
+          <h3>Choose the frequency</h3>
+<p>Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+        </div>
+        <div class="step">
+          <div class="circle"></div>
+          <div class="step-number">03</div>
+          <h3>Receive and enjoy!</h3>
+         <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+<!-- coffee-preference section -->
+ <section class="coffee-preference" >
+    <div class="container">
+  <div class="coffee-steps" aria-label="Coffee setup steps">
+    <ol>
+      <li class="active"><span>01</span> Preferences</li>
+      <li><span>02</span> Bean Type</li>
+      <li><span>03</span> Quantity</li>
+      <li><span>04</span> Grind Option</li>
+      <li><span>05</span> Deliveries</li>
+    </ol>
+  </div>
+
+  <div class="coffee-options">
+    <h2 id="coffee-question" class="coffee-title">
+      How do you drink your coffee?
+    </h2>
+
+    <div class="coffee-cards">
+      <article class="coffee-card" tabindex="0" data-choice="capsule">
+        <h3 class="coffee-card__title">Capsule</h3>
+        <p class="coffee-card__desc">
+          Compatible with Nespresso systems and similar brewers.
+        </p>
+      </article>
+
+      <article class="coffee-card active" tabindex="0" data-choice="filter">
+        <h3 class="coffee-card__title">Filter</h3>
+        <p class="coffee-card__desc">
+          For pour over or drip methods like Aeropress, Chemex, and V60.
+        </p>
+      </article>
+
+      <article class="coffee-card" tabindex="0" data-choice="espresso">
+        <h3 class="coffee-card__title">Espresso</h3>
+        <p class="coffee-card__desc">
+          Dense and finely ground beans for an intense, flavorful experience.
+        </p>
+      </article>
+    </div>
+    <h2 id="coffee-question" class="coffee-title">
+      What type of coffee?
+    </h2>
+
+    <div class="coffee-cards">
+      <article class="coffee-card" tabindex="0" data-choice="capsule">
+        <h3 class="coffee-card__title">Single Origin</h3>
+        <p class="coffee-card__desc">
+         Distinct, high quality coffee from a specific family-owned farm
+        </p>
+      </article>
+
+      <article class="coffee-card active" tabindex="0" data-choice="filter">
+        <h3 class="coffee-card__title">Decaf</h3>
+        <p class="coffee-card__desc">
+        Just like regular coffee, except the caffeine has been removed
+        </p>
+      </article>
+
+      <article class="coffee-card" tabindex="0" data-choice="espresso">
+        <h3 class="coffee-card__title">Blended</h3>
+        <p class="coffee-card__desc">
+        Combination of two or three dark roasted beans of organic coffees
+        </p>
+      </article>
+    </div>
+    <h2 id="coffee-question" class="coffee-title">
+      How much would you like?
+    </h2>
+
+    <div class="coffee-cards">
+      <article class="coffee-card" tabindex="0" data-choice="capsule">
+        <h3 class="coffee-card__title">250g</h3>
+        <p class="coffee-card__desc">
+         Perfect for the solo drinker. Yields about 12 delicious cups.
+        </p>
+      </article>
+
+      <article class="coffee-card active" tabindex="0" data-choice="filter">
+        <h3 class="coffee-card__title">500g</h3>
+        <p class="coffee-card__desc">
+         Perfect option for a couple. Yields about 40 delectable cups.
+        </p>
+      </article>
+
+      <article class="coffee-card" tabindex="0" data-choice="espresso">
+        <h3 class="coffee-card__title">1000g</h3>
+        <p class="coffee-card__desc">
+        Perfect for offices and events. Yields about 90 delightful cups.
+        </p>
+      </article>
+    </div>
+    <h2 id="coffee-question" class="coffee-title">
+      Want us to grind them?
+    </h2>
+
+    <div class="coffee-cards">
+      <article class="coffee-card" tabindex="0" data-choice="capsule">
+        <h3 class="coffee-card__title">Wholebean</h3>
+        <p class="coffee-card__desc">
+          Best choice if you cherish the full sensory experience
+        </p>
+      </article>
+
+      <article class="coffee-card active" tabindex="0" data-choice="filter">
+        <h3 class="coffee-card__title">Filter</h3>
+        <p class="coffee-card__desc">
+          For drip or pour-over coffee methods such as V60 or Aeropress
+        </p>
+      </article>
+
+      <article class="coffee-card" tabindex="0" data-choice="espresso">
+        <h3 class="coffee-card__title">Cafetiére</h3>
+        <p class="coffee-card__desc">
+          Course ground beans specially suited for french press coffee
+        </p>
+      </article>
+    </div>
+    <h2 id="coffee-question" class="coffee-title">
+    How often should we deliver?
+    </h2>
+
+    <div class="coffee-cards">
+      <article class="coffee-card" tabindex="0" data-choice="capsule">
+        <h3 class="coffee-card__title">Every week</h3>
+        <p class="coffee-card__desc">
+         $7.20 per shipment. Includes free first-class shipping.
+        </p>
+      </article>
+
+      <article class="coffee-card active" tabindex="0" data-choice="filter">
+        <h3 class="coffee-card__title">Every 2 weeks</h3>
+        <p class="coffee-card__desc">
+          $9.60 per shipment. Includes free priority shipping.
+        </p>
+      </article>
+
+      <article class="coffee-card" tabindex="0" data-choice="espresso">
+        <h3 class="coffee-card__title">Every month</h3>
+        <p class="coffee-card__desc">
+          $12.00 per shipment. Includes free priority shipping.
+        </p>
+      </article>
+
+     
+
+    </div>
+
+     <article class="order">
+        <p>ORDER SUMMARY</p>
+        <h2>“I drink my coffee as <span>Filter</span>, with a <span>Decaf </span>type of bean. <span>250g</span> ground all <span>Cafetiére</span>, sent to me <span>Every Week</span>.”</h2>
+      </article>
+      <div class="create-btn">
+        <button ><a href="#">Create my plan!</a></button>
+      </div>
+  </div>
+  </div>
+</section>
+
+
+<script src="create.js"></script>
+
+    </main>
+    <!-- FOOTER -->
+    <footer >
+  <div class="container ">
+    <!-- LOGO -->
+    <div class="footer-logo">
+      <a href="/" title="Go to Coffee Roasters homepage">
+        <img src="img/logo1.png" alt="Coffee Roasters logo" class="footer-logo-img">
+      </a>
+    </div>
+    <!-- NAVIGATION LINKS -->
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul class="footer-links">
+        <li><a href="#" class="footer-link">Home</a></li>
+        <li><a href="about.html" class="footer-link">About Us</a></li>
+        <li><a href="create.html" class="footer-link">Create Your Plan</a></li>
+      </ul>
+    </nav>
+    <!-- ICONS -->
+    <nav class="footer-social" aria-label="Social media links">
+      <ul class="social-links">
+        <li>
+          <a href="#" aria-label="Visit our Facebook page" title="Facebook">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Visit our Twitter profile" title="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Visit our Instagram profile" title="Instagram">
+           <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+ <script src="create.js"></script>
+</body>
+</html>

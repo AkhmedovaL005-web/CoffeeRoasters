@@ -1,0 +1,388 @@
+/* ====== GLOBAL STYLES ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  color: #333D4B;
+  background-color: #FEFCF7;
+}
+h1, h2, h3, h4, a {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: #333D4B;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ====== HEADER ====== */
+nav > .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+.logorasm {
+  width: 200px;
+  height: 20px;
+}
+.logo {
+  width: 200px;
+  height: 20px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.nav__link {
+  color: #83888F;
+  font-size: 12px;
+}
+.nav__link:hover {
+  color: black;
+}
+
+/* Hamburger default (desktopda yashirin) */
+.hamburger {
+  display: none;
+}
+
+/* ====== ABOUT SECTION ====== */
+.about > .container {
+  background-image: url("img/about_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 750px 120px 85px;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 30px;
+}
+.about h1 {
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+}
+.about p {
+  max-width: 450px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 24px;
+  color: #FEFCF7;
+}
+
+/* ====== COMMITMENT ====== */
+.commitment > .container {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+  padding: 0 80px;
+  margin-top: 168px;
+}
+.commitment-img img {
+  width: 450px;
+  height: 520px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.commitment-text {
+  max-width: 540px;
+}
+.commitment-text h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+.commitment-text p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 32px;
+}
+
+/* ====== UNCOMPROMISING ====== */
+.Uncompromising > .container {
+  background: #333D4B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 100px;
+  margin-top: 250px;
+}
+.Uncompromising-text h2 {
+  font-size: 40px;
+  color: #FEFCF7;
+}
+.Uncompromising-text p {
+  max-width: 540px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  margin-top: 32px;
+}
+.Uncompromising-img {
+  width: 450px;
+  height: 470px;
+}
+.Uncompromising-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ====== HEADQUARTERS ====== */
+.headquarters > .container {
+  margin-top: 168px;
+}
+.headquarters h3 {
+  font-size: 24px;
+  color: #83888F;
+}
+.states {
+  display: flex;
+  gap: 250px;
+  margin-top: 72px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.state {
+  text-align: center;
+}
+.state-img img {
+  width: 100px;
+  height: 100px;
+}
+.state h4 {
+  font-size: 28px;
+  margin-top: 45px;
+}
+.state p {
+  width: 115px;
+  margin: 24px auto 0;
+}
+
+/* ====== FOOTER ====== */
+footer > .container {
+ background-color: #2C343E; 
+  padding: 50px 85px;
+  color: #FEFCF7;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+.footer-logo-img {
+  width: 180px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+.footer-logo-img:hover {
+  transform: scale(1.05);
+}
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+.footer-link {
+  color: #83888F;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.footer-link:hover {
+  color: #FEFCF7;
+}
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+.social-links a {
+  color: #FEFCF7;
+  font-size: 24px;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  color: #66D2CF;
+  transform: translateY(-3px);
+}
+
+/* === MEDIA QUERIES === */
+
+/* === Laptop (1024px – 1199px) === */
+@media (max-width: 1199px) {
+  nav > .container {
+    padding: 0 40px;
+  }
+  .about > .container {
+    padding: 120px 500px 100px 60px;
+  }
+  .commitment > .container {
+    gap: 80px;
+  }
+  .Uncompromising > .container {
+    padding: 80px;
+  }
+}
+
+/* === Tablet (768px – 1023px) === */
+@media (max-width: 1023px) {
+  nav > .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nav__list {
+    gap: 25px;
+  }
+
+  .about > .container {
+    padding: 120px 60px;
+    text-align: center;
+  }
+
+  .commitment > .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .Uncompromising > .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px;
+  }
+
+  .Uncompromising-img {
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .states {
+    gap: 100px;
+  }
+}
+
+/* === Mobile (480px – 767px) === */
+@media (max-width: 767px) {
+  .logorasm {
+    width: 150px;
+    height: auto;
+  }
+
+  nav > .container {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  /* Hamburger faqat shu yerda chiqadi */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+    z-index: 2000;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333D4B;
+    border-radius: 2px;
+  }
+
+  /* Menyu defaultda yashirin */
+  .nav__list {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #FEFCF7;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  .nav__list.active {
+    display: flex;
+  }
+
+  .about > .container {
+    padding: 100px 30px;
+  }
+
+  .commitment > .container {
+    padding: 0 30px;
+    margin-top: 80px;
+  }
+
+  .Uncompromising > .container {
+    padding: 40px 30px;
+  }
+
+  .states {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  footer > .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+}
+
+/* === Small Mobile (max-width: 479px) === */
+@media (max-width: 479px) {
+  .logorasm {
+    width: 130px;
+  }
+
+  .nav__link {
+    font-size: 11px;
+  }
+
+  .about h1 {
+    font-size: 32px;
+  }
+  .about p {
+    font-size: 14px;
+  }
+  .commitment-text h2,
+  .Uncompromising-text h2 {
+    font-size: 28px;
+  }
+  .commitment-text p,
+  .Uncompromising-text p {
+    font-size: 14px;
+  }
+  .state h4 {
+    font-size: 20px;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

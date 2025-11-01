@@ -1,0 +1,643 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+/* Fontlar */
+body {
+  font-family: "Barlow", sans-serif;
+  color: #333D4B;
+  background-color: #FEFCF7;
+}
+
+h1, h2, h3, h4 ,a{
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: #333D4B;
+}
+.container {
+  max-width: 1440px;   /* o‘zgardi */
+  width: 100%;
+  margin: 0 auto;
+}
+/* ====== HEADER ====== */
+nav > .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+.logorasm {
+  width: 200px;
+  height: 20px;
+}
+.logo {
+  width: 200px;
+  height: 20px;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+/* .nav__link {
+  color: #83888F;
+  font-size: 12px;
+}
+.nav__link:hover {
+  color:  black;
+
+} */
+ .hamburger{
+  display: none;
+ }
+
+
+/* <!-- create section --> */
+.create>.container{
+width: 100%;
+  max-height: 100vh;
+  border: none;
+  background-image: url("img/creat_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 30px;
+  padding: 130px 700px 120px 80px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.create>.container h1{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FEFCF7;
+}
+.create>.container p{
+    width: 440px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    margin-top: 32px;
+}
+/*   <!-- Pick your coffee section -->*/
+.Pickyourcoffee>.container{
+    margin-top: 168px;
+    background-color: #333D4B;
+    padding: 30px 30px 50px;
+    border-radius: 10px;
+}
+.steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  align-items: flex-start;
+  position: relative;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+.progress-line {
+  position: absolute;
+  top: 16px;
+  left: 50px;
+  right: 180px;
+  height: 2px;
+  background-color: #FDD6BA;
+  z-index: 1;
+}
+.steps{
+  margin-top: 100px;
+  margin-left: 85px;
+}
+.step {
+  position: relative;
+  width: 200px;
+  text-align: left;
+  z-index: 2;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0E8784;
+  border-radius: 50%;
+  background-color: #FEFCF7;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 3;
+}
+.step-number {
+  font-size: 60px;
+  font-weight: 900;
+  color: #FDD6BA;
+  margin-bottom: 20px;
+}
+.step h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #FEFCF7;
+  margin-top: 40px;
+}
+.step p {
+  width: 280px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #83888F;
+  margin-top: 42px;
+}
+/* <!-- section 3--> */
+/* ===== Section Layout ===== */
+.coffee-preference > .container {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  gap: 100px;
+  padding: 50px ;
+  align-items: start;
+  margin-top: 50px;
+}
+
+/* ===== Steps (Left Side) ===== */
+.coffee-steps ol {
+  list-style: none;
+}
+
+.coffee-steps li {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #83888f;
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.coffee-steps li span {
+  color: #0e8784;
+  font-weight: 600;
+}
+
+.coffee-steps li.active,
+.coffee-steps li:hover {
+  color: #333d4b;
+}
+
+/* ===== Options (Right Side) ===== */
+/* .coffee-preference > .container .coffee-options .coffee-title {
+  margin-top: 0px;
+} */
+
+.coffee-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.coffee-card {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f4f1eb;
+  border-radius: 10px;
+  padding: 30px 30px 90px 30px ;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.coffee-card__title {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #83888F;
+  margin-bottom: 24px;
+}
+
+.coffee-card__desc {
+  font-weight: 400;
+  color: #333D4B;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.coffee-card:hover,
+.coffee-card:focus {
+  transform: translateY(-3px);
+  border-color: #0e8784;
+}
+
+.coffee-card.active {
+  background-color: #2ecc71; 
+  color: #fff;
+  border-color: #27ae60;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+  transform: translateY(-3px);
+}
+
+.coffee-card.active .coffee-card__title,
+.coffee-card.active .coffee-card__desc {
+  color: #fff;
+}
+
+.coffee-card.active {
+  background-color: #0E8784;
+  color: #fff;
+  border-color: #0E8784;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+  transform: translateY(-3px);
+}
+.order{
+padding: 30px 60px;
+background-color: #333D4B;
+}
+.order p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.order h2{
+  width: 500px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin-top: 8px;
+}
+.order h2 span{
+  color: #0E8784;
+}
+.create-btn{
+  display: flex;
+  justify-content: end;
+}
+.create-btn button{
+  padding: 15px 35px;
+  margin-top: 40px;
+  background-color: #0E8784;
+  border-radius: 10px;
+  border: none;
+}
+.create-btn a{
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FEFCF7;
+}
+/*  FOOTER STYLING */
+footer>.container {
+  background-color: #2C343E; 
+  padding: 50px 85px;
+  color: #FEFCF7;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+.footer-logo-img {
+  width: 180px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+.footer-logo-img:hover {
+  transform: scale(1.05);
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.footer-link {
+  text-decoration: none;
+  color: #83888F;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: #FEFCF7;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.social-links a {
+  color: #FEFCF7;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-links a:hover {
+  color: #66D2CF;
+  transform: translateY(-3px);
+}
+/* ==================== MEDIA QUERIES ==================== */
+
+/* 💻 Laptop (max-width: 1199px) */
+@media (max-width: 1199px) {
+  /* === HEADER ===*/
+  nav > .container {
+    padding: 0 40px;
+  }
+  .create>.container {
+    padding: 100px 400px 100px 60px;
+  }
+
+  .steps {
+    gap: 120px;
+  }
+
+  .coffee-preference > .container {
+    gap: 60px;
+    padding: 40px;
+  }
+
+  .coffee-card {
+    padding: 25px 25px 70px 25px;
+  }
+
+  .coffee-card__title {
+    font-size: 32px;
+  }
+}
+
+/* 🖥️ Tablet Horizontal (max-width: 992px) */
+@media (max-width: 992px) {
+   nav > .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nav__list {
+    gap: 25px;
+  }
+  .create>.container {
+    padding: 90px 200px 90px 60px;
+  }
+
+  .create>.container h1 {
+    font-size: 58px;
+    line-height: 60px;
+  }
+
+  .Pickyourcoffee>.container {
+    margin-top: 120px;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
+  .progress-line {
+    display: none;
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .coffee-preference > .container {
+    grid-template-columns: 1fr;
+    padding: 40px 30px;
+  }
+
+  .coffee-steps {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+
+  .coffee-steps li {
+    font-size: 1rem;
+  }
+
+  .coffee-cards {
+    justify-content: center;
+  }
+
+  .order {
+    padding: 20px 40px;
+  }
+
+  .order h2 {
+    width: 100%;
+    font-size: 20px;
+    line-height: 32px;
+  }
+   footer > .container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+}
+
+/* 📱 Tablet Vertical (max-width: 768px) */
+@media (max-width: 768px) {
+    /* header */
+  .logorasm {
+    width: 150px;
+    height: auto;
+  }
+
+  nav > .container {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .nav__list {
+    display: none; /* hamburger chiqadi */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #FEFCF7;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  .nav__list.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333D4B;
+    border-radius: 2px;
+  }
+  .create>.container {
+    background-position: right;
+    padding: 70px 60px;
+  }
+
+  .create>.container h1 {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  .create>.container p {
+    width: 100%;
+  }
+
+  .coffee-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
+  .coffee-cards {
+    gap: 1rem;
+  }
+
+  .order h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .create-btn button {
+    padding: 12px 28px;
+    margin-top: 30px;
+  }
+
+  .create-btn a {
+    font-size: 16px;
+  }
+   footer > .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+}
+
+/* 📲 Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+  .logorasm {
+    width: 130px;
+  }
+
+  .nav__link {
+    font-size: 11px;
+  }
+
+  .create>.container {
+    padding: 60px 20px;
+    text-align: center;
+    background-position: center;
+  }
+
+  .create>.container h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .create>.container p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .Pickyourcoffee>.container {
+    padding: 40px 20px;
+  }
+
+  .steps {
+    margin: 60px auto 0;
+    align-items: center;
+  }
+
+  .coffee-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coffee-steps li {
+    font-size: 0.95rem;
+  }
+
+  .coffee-card {
+    flex: 1 1 100%;
+    padding: 25px;
+  }
+
+  .coffee-card__title {
+    font-size: 28px;
+  }
+
+  .order {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .order h2 {
+    width: 100%;
+  }
+
+  .create-btn {
+    justify-content: center;
+  }
+
+  .create-btn button {
+    width: 100%;
+  }
+  
+  footer > .container {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* 📱 Small Mobile (max-width: 400px) */
+@media (max-width: 400px) {
+  .create>.container h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .coffee-card__title {
+    font-size: 24px;
+  }
+
+  .coffee-card__desc {
+    font-size: 14px;
+  }
+
+  .create-btn a {
+    font-size: 15px;
+  }
+}
+
+
+
+
